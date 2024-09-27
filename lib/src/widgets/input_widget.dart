@@ -371,7 +371,7 @@ class _InputWidgetState extends State<InternationalPhoneNumberInput> {
       }
     });
 
-    return null;
+    return isValid ? "" : null;
   }
 
   /// Changes Selector Button Country and Validate Change.
@@ -476,6 +476,7 @@ class _InputWidgetView
                 textDirection: TextDirection.ltr,
                 controller: state.controller,
                 cursorColor: widget.cursorColor,
+                cursorErrorColor: widget.cursorColor,
                 focusNode: widget.focusNode,
                 enabled: widget.isEnabled,
                 autofocus: widget.autoFocus,
