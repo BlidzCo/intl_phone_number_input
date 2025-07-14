@@ -49,7 +49,7 @@ class Item extends StatelessWidget {
           Icon(
             Icons.keyboard_arrow_down_outlined,
             size: 20,
-            color: Color(0xff98A2B3),
+            color: Color(0xff171717),
           ),
         ],
       ),
