@@ -143,8 +143,9 @@ class _InputWidgetState extends State<InternationalPhoneNumberInput> {
   List<Country> countries = [];
   bool isNotValid = true;
   String? _errorText;
-  final _connerRadius = 999.0;
-  final _backgroundColor = Color(0xff344054);
+  final _connerRadius = 12.0;
+  final _backgroundColor = Colors.white;
+  final _borderColor = Color(0x1A171717);
 
   @override
   void initState() {
@@ -417,7 +418,7 @@ class _InputWidgetState extends State<InternationalPhoneNumberInput> {
 
   Decoration _getDecoration() {
     return BoxDecoration(
-      border: Border.all(color: _errorText != null ? Colors.red : _backgroundColor, width: 1),
+      border: Border.all(color: _errorText != null ? Colors.red : _borderColor, width: 1),
       borderRadius: BorderRadius.circular(_connerRadius),
       color: _backgroundColor,
     );
